@@ -6,7 +6,7 @@ This repo is designed to provide space to code a fullstack app. It contains node
 
 ### 0. Cloning and installation
 
-- [ ] Clone this repo, navigate to it, install packages, and start the server with `npm run dev`
+- [x] Clone this repo, navigate to it, install packages, and start the server with `npm run dev`
   <details style="padding-left: 2em">
     <summary>Tip</summary>
 
@@ -31,7 +31,7 @@ This repo is designed to provide space to code a fullstack app. It contains node
 
 ### 1. Choosing your data set
 
-- [ ] First, decide what you would like to keep a collection of. This could be a repo for keeping track of movies, books, gifs, cars, rocks, anything you fancy, but keep it simple!
+- [x] First, decide what you would like to keep a collection of. This could be a repo for keeping track of movies, books, gifs, cars, rocks, anything you fancy, but keep it simple!
   <details style="padding-left: 2em">
     <summary>More about your collection</summary>
 
