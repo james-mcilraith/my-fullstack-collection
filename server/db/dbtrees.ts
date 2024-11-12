@@ -16,7 +16,7 @@ export async function getAllTrees() {
 }
 
 // Read - One
-export async function getTreesById(id: number) {
+export async function getTreeById(id: number) {
   const tree = await dbtrees('trees')
     .where('id', id)
     .select('id', 'name', 'age', 'species', 'location', 'url')
@@ -26,7 +26,7 @@ export async function getTreesById(id: number) {
 }
 
 // Create
-export async function addtree(tree: TreeData) {
+export async function addTree(tree: TreeData) {
   const result = await dbtrees('trees').insert({
     name: tree.name,
     age: tree.age,
@@ -34,11 +34,11 @@ export async function addtree(tree: TreeData) {
     location: tree.location,
     url: tree.location,
   })
-  // console.log(trees)
+  console.log(result)
   return result as number[]
 }
 
-export async function updatetreeById(id: number, tree: Tree) {
+export async function updateTreeById(id: number, tree: Tree) {
   const result = await dbtrees('trees')
     .update({
       name: tree.name,
@@ -53,7 +53,7 @@ export async function updatetreeById(id: number, tree: Tree) {
 }
 
 // Delete
-export async function deletetreeById(id: number) {
+export async function deleteTreeById(id: number) {
   const result = await dbtrees('trees').where('id', id).delete()
   console.log(result)
   return result as number
