@@ -2,7 +2,7 @@ export interface TreeData {
   name: string
   age?: string
   species?: string
-  loaction?: string
+  location?: string
   url?: string
 }
 
