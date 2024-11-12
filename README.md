@@ -48,12 +48,12 @@ Our first job is getting something showing on the front end from our database. H
 
 ### 2. Building the database
 
-- [ ] Design a database to store a list of your things (e.g. books)
-- [ ] Build the migrations and seed data
+- [x] Design a database to store a list of your things (e.g. books)
+- [x] Build the migrations and seed data
 
 ### 3. Building the API
-- [ ] Build an API (back end route) to get the information from your database
-- [ ] Test your API with Thunder Client
+- [x] Build an API (back end route) to get the information from your database
+- [x] Test your API with Thunder Client
 
 ## Front end
 
