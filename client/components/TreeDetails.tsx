@@ -45,7 +45,7 @@ const TreeDetails: React.FunctionComponent = () => {
     <div className="tree-details">
       <h2>{tree.name}</h2>
       <img
-        src={tree.treeUrl || 'client/images/sadtree.jpeg'}
+        src={tree.treeUrl || '../images/sadtree.jpeg'}
         alt={tree.name || 'Tree image'}
       />
       <p>

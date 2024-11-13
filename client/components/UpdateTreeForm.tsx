@@ -61,7 +61,7 @@ const UpdateTreeForm: React.FunctionComponent = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} autoComplete="on">
+    <form onSubmit={handleSubmit} autoComplete="on" className="form">
       <label htmlFor="name">Tree Name</label>
       <input
         id="name"
