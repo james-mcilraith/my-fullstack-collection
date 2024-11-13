@@ -1,8 +1,49 @@
 body {
-  position: absolute;
-  top: 0;
-  left: 0;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+header nav a {
+  margin: 0 1em;
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #4caf50;
+  color: white;
+}
+
+.tree-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tree-card {
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin: 1em;
+  width: 200px;
+  text-align: center;
+}
+
+.tree-card img {
+  width: 100%;
+  height: auto;
+}
+
+.tree-details {
+  text-align: center;
+  margin-top: 2em;
 }

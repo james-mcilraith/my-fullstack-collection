@@ -62,7 +62,7 @@ router.patch('/:id', async (req, res) => {
   }
 })
 
-// DELETE api/v1/birds/:id
+// DELETE api/v1/trees/:id
 router.delete('/:id', async (req, res) => {
   try {
     const { id } = req.params
