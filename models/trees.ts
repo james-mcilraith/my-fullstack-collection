@@ -4,6 +4,7 @@ export interface TreeData {
   species?: string
   location?: string
   treeUrl?: string
+  description?: string
 }
 
 export interface Tree extends TreeData {

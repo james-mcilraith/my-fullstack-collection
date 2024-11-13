@@ -26,6 +26,7 @@ const TreeDetails: React.FunctionComponent = () => {
       <p>{tree.age}</p>
       <p>{tree.species}</p>
       <p>{tree.location}</p>
+      <p>{tree.description}</p>
     </div>
   )
 }

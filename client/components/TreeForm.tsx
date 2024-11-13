@@ -21,13 +21,23 @@ const TreeForm: React.FC<TreeFormProps> = ({ tree }) => {
   const [treeUrl, setTreeUrl] = useState<string | undefined>(
     tree ? tree.treeUrl : '',
   )
+  const [description, setDescription] = useState<string | undefined>(
+    tree ? tree.description : '',
+  )
 
   const navigate = useNavigate()
 
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault()
 
-    const treeData: TreeData = { name, age, species, location, treeUrl }
+    const treeData: TreeData = {
+      name,
+      age,
+      species,
+      location,
+      treeUrl,
+      description,
+    }
 
     try {
       if (tree) {
@@ -74,6 +84,12 @@ const TreeForm: React.FC<TreeFormProps> = ({ tree }) => {
         value={treeUrl}
         onChange={(event) => setTreeUrl(event.target.value)}
         placeholder="Image URL"
+      />
+      <input
+        type="text"
+        value={description}
+        onChange={(event) => setDescription(event.target.value)}
+        placeholder="Description"
       />
       <button type="submit">{tree ? 'Update Tree' : 'Add Tree'}</button>
     </form>

@@ -10,6 +10,7 @@ export const up = function (knex) {
     table.string('species')
     table.string('location')
     table.string('url')
+    table.string('description')
   })
 }
 
