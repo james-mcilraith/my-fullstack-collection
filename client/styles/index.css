@@ -2,13 +2,20 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 header {
+  text-align: center;
+  padding: 1em;
   background-color: #1c551e;
   color: white;
-  padding: 1em;
-  text-align: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 header nav a {
@@ -20,20 +27,34 @@ header nav a {
 footer {
   text-align: center;
   padding: 1em;
-  background-color: #4caf50;
+  background-color: #1c551e;
   color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2em 0;
 }
 
 .tree-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
 }
 
 .tree-card {
   border: 1px solid #ddd;
   padding: 1em;
-  margin: 1em;
   width: 200px;
   text-align: center;
 }
@@ -46,4 +67,39 @@ footer {
 .tree-details {
   text-align: center;
   margin-top: 2em;
+  width: 80%;
+}
+
+.buttons {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 1em;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.buttons button:nth-child(1) {
+  background-color: #ffa500;
+}
+
+.buttons button:nth-child(1):hover {
+  background-color: #ff8c00;
+}
+
+.buttons button:nth-child(2) {
+  background-color: #ff5733;
+}
+
+.buttons button:nth-child(2):hover {
+  background-color: #ff3d00;
 }

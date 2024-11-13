@@ -34,7 +34,7 @@ router.get('/:id', async (req, res) => {
 })
 
 // POST api/v1/trees
-router.post('/', async (req, res) => {
+router.post('/add', async (req, res) => {
   try {
     const newTree = req.body as TreeData
     const id = await dbtrees.addTree(newTree)
@@ -48,7 +48,7 @@ router.post('/', async (req, res) => {
 })
 
 // PATCH api/v1/trees/:id
-router.patch('/:id', async (req, res) => {
+router.patch('/edit/:id', async (req, res) => {
   try {
     const { id } = req.params
     const updatedTree = req.body as Tree

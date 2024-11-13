@@ -3,17 +3,18 @@ import Header from './Header'
 import Footer from './Footer'
 import TreeList from './TreeList'
 import TreeDetails from './TreeDetails'
-import TreeForm from './TreeForm'
+import AddTreeForm from './AddTreeForm'
+import UpdateTreeForm from './UpdateTreeForm'
 
 const App = () => (
   <Router>
     <Header />
-    <main>
+    <main className="main-content">
       <Routes>
         <Route path="/" element={<TreeList />} />
-        <Route path="/add" element={<TreeForm />} />
+        <Route path="/add" element={<AddTreeForm />} />
         <Route path="/trees/:id" element={<TreeDetails />} />
-        <Route path="/trees/:id/edit" element={<TreeForm />} />
+        <Route path="/edit/:id/" element={<UpdateTreeForm />} />
       </Routes>
     </main>
     <Footer />

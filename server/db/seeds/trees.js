@@ -10,7 +10,8 @@ export const seed = async function (knex) {
       age: 2500,
       species: 'Kauri',
       location: 'Waipoua Forest, New Zealand',
-      url: 'https://en.wikipedia.org/wiki/T%C4%81ne_Mahuta#/media/File:00_29_0496_Waipoua_Forest_NZ_-_Kauri_Baum_Tane_Mahuta.jpg',
+      tree_url:
+        'https://commons.wikimedia.org/wiki/File:00_29_0496_Waipoua_Forest_NZ_-_Kauri_Baum_Tane_Mahuta.jpg#/media/File:00_29_0496_Waipoua_Forest_NZ_-_Kauri_Baum_Tane_Mahuta.jpg',
       description:
         'The largest known living Kauri tree in the world, towering at 51.2 meters tall.',
     },
@@ -19,7 +20,8 @@ export const seed = async function (knex) {
       age: 2500,
       species: 'Giant Sequoia',
       location: 'Sequoia National Park, California, USA',
-      url: 'https://en.wikipedia.org/wiki/General_Sherman_(tree)#/media/File:General_Sherman_en_californie_a_s%C3%A9quoia_parc.jpg',
+      tree_url:
+        'https://commons.wikimedia.org/wiki/File:General_Sherman_en_californie_a_s%C3%A9quoia_parc.jpg#/media/File:General_Sherman_en_californie_a_s%C3%A9quoia_parc.jpg',
       description:
         'The largest tree on Earth by volume, standing 83.8 meters tall and estimated to be over 2,500 years old.',
     },
@@ -28,7 +30,8 @@ export const seed = async function (knex) {
       age: 9550,
       species: 'Norway Spruce',
       location: 'Fulufjället Mountain, Sweden',
-      url: 'https://en.wikipedia.org/wiki/Old_Tjikko#/media/File:Old-Tjikko-2011-07-19-001.jpg',
+      tree_url:
+        'https://commons.wikimedia.org/wiki/File:Old-Tjikko-2011-07-19-001.jpg#/media/File:Old-Tjikko-2011-07-19-001.jpg',
       description:
         'Considered one of the oldest known living clonal trees, dating back over 9,500 years.',
     },
@@ -37,7 +40,8 @@ export const seed = async function (knex) {
       age: 80000,
       species: 'Quaking Aspen',
       location: 'Fishlake National Forest, Utah, USA',
-      url: 'https://en.wikipedia.org/wiki/Pando_(tree)#/media/File:FallPando02.jpg',
+      tree_url:
+        'https://commons.wikimedia.org/wiki/File:FallPando02.jpg#/media/File:FallPando02.jpg',
       description:
         'A clonal colony of a single organism, making it one of the oldest and heaviest living beings on Earth.',
     },
@@ -46,7 +50,8 @@ export const seed = async function (knex) {
       age: 'Unknown (died 1973)',
       species: 'Acacia',
       location: 'Sahara Desert, Niger',
-      url: 'https://en.wikipedia.org/wiki/Tree_of_T%C3%A9n%C3%A9r%C3%A9#/media/File:Arbre-du-tenere-1961.jpg',
+      tree_url:
+        'https://commons.wikimedia.org/wiki/File:Arbre-du-tenere-1961.jpg#/media/File:Arbre-du-tenere-1961.jpg',
       description:
         'Once the only tree for hundreds of kilometers in the vast Sahara Desert, it became an iconic symbol of resilience.',
     },
@@ -55,7 +60,8 @@ export const seed = async function (knex) {
       age: '800-1000',
       species: 'Baobab',
       location: 'Avenue of the Baobabs, Madagascar',
-      url: 'https://en.wikipedia.org/wiki/Avenue_of_the_Baobabs#/media/File:Walking_the_Avenue_of_the_Baobabs.jpg',
+      tree_url:
+        'https://commons.wikimedia.org/wiki/File:Walking_the_Avenue_of_the_Baobabs.jpg#/media/File:Walking_the_Avenue_of_the_Baobabs.jpg',
       description:
         'A striking row of ancient baobab trees, often called the "upside-down trees" for their unique appearance.',
     },
@@ -64,7 +70,8 @@ export const seed = async function (knex) {
       age: '400-500',
       species: 'Southern Live Oak',
       location: 'Angel Oak Park, Charleston, South Carolina, USA',
-      url: 'https://en.wikipedia.org/wiki/Angel_Oak#/media/File:Angel_Oak_Tree_in_SC.jpg',
+      tree_url:
+        'https://commons.wikimedia.org/wiki/File:Angel_Oak_Tree_in_SC.jpg#/media/File:Angel_Oak_Tree_in_SC.jpg',
       description:
         'A towering Southern Live Oak that is an iconic symbol of Charleston, with a canopy that provides shade for over 17,000 square feet.',
     },
@@ -73,7 +80,8 @@ export const seed = async function (knex) {
       age: '2000-7000',
       species: 'Cryptomeria',
       location: 'Yakushima Island, Japan',
-      url: 'https://en.wikipedia.org/wiki/J%C5%8Dmon_Sugi#/media/File:Jomon_Sugi_07.jpg',
+      tree_url:
+        'https://commons.wikimedia.org/wiki/File:Jomon_Sugi_07.jpg#/media/File:Jomon_Sugi_07.jpg',
       description:
         'An ancient and massive Cryptomeria tree, considered one of Japan’s oldest and most revered natural monuments.',
     },
@@ -84,7 +92,8 @@ export const seed = async function (knex) {
       species: 'Banyan',
       location:
         'Acharya Jagadish Chandra Bose Indian Botanic Garden, Kolkata, India',
-      url: 'https://en.wikipedia.org/wiki/The_Great_Banyan#/media/File:TheGreatBanyanTree_November_2021.jpg',
+      tree_url:
+        'https://commons.wikimedia.org/wiki/File:TheGreatBanyanTree_November_2021.jpg#/media/File:TheGreatBanyanTree_November_2021.jpg',
       description:
         'A massive banyan tree known for its vast spread, with over 3,000 aerial roots supporting its huge canopy.',
     },
@@ -93,7 +102,8 @@ export const seed = async function (knex) {
       age: 4845,
       species: 'Great Basin Bristlecone Pine',
       location: 'White Mountains, California, USA',
-      url: 'https://en.wikipedia.org/wiki/Methuselah_(pine_tree)#/media/File:Methuselah_Walk_USA_Ca.jpg',
+      tree_url:
+        'https://commons.wikimedia.org/wiki/File:Methuselah_Walk_USA_Ca.jpg#/media/File:Methuselah_Walk_USA_Ca.jpg',
       description:
         'One of the oldest non-clonal trees in the world, estimated to be over 4,800 years old.',
     },

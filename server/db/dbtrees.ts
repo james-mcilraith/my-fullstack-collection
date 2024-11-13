@@ -9,7 +9,8 @@ export async function getAllTrees() {
     'age',
     'species',
     'location',
-    'url',
+    'tree_url as treeUrl',
+    'description',
   )
   console.log(trees)
   return trees as Tree[]
@@ -19,7 +20,15 @@ export async function getAllTrees() {
 export async function getTreeById(id: number) {
   const tree = await dbtrees('trees')
     .where('id', id)
-    .select('id', 'name', 'age', 'species', 'location', 'url')
+    .select(
+      'id',
+      'name',
+      'age',
+      'species',
+      'location',
+      'tree_url as treeUrl',
+      'description',
+    )
     .first()
   console.log(tree)
   return tree as Tree
@@ -32,12 +41,14 @@ export async function addTree(tree: TreeData) {
     age: tree.age,
     species: tree.species,
     location: tree.location,
-    url: tree.location,
+    tree_url: tree.location,
+    description: tree.description,
   })
   console.log(result)
   return result as number[]
 }
 
+// Update
 export async function updateTreeById(id: number, tree: Tree) {
   const result = await dbtrees('trees')
     .update({
@@ -45,7 +56,8 @@ export async function updateTreeById(id: number, tree: Tree) {
       age: tree.age,
       species: tree.species,
       location: tree.location,
-      url: tree.location,
+      tree_url: tree.location,
+      description: tree.description,
     })
     .where('id', id)
   console.log(result)

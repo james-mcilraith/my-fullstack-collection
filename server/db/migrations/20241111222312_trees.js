@@ -9,7 +9,7 @@ export const up = function (knex) {
     table.string('age')
     table.string('species')
     table.string('location')
-    table.string('url')
+    table.string('tree_url')
     table.string('description')
   })
 }

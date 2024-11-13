@@ -37,7 +37,7 @@ export async function addTree(tree: TreeData): Promise<Tree> {
 // Update tree data by ID
 export async function updateTreeById(id: number, tree: Tree): Promise<void> {
   try {
-    const result = await request.patch(`/api/v1/trees/${id}`).send(tree)
+    const result = await request.patch(`/api/v1/trees/edit/${id}`).send(tree)
     if (result.statusCode !== 200) {
       throw new Error(
         `Failed to update tree. Status code: ${result.statusCode}`,
