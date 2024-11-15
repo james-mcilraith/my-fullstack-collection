@@ -21,7 +21,7 @@ export const seed = async function (knex) {
       species: 'Giant Sequoia',
       location: 'Sequoia National Park, California, USA',
       tree_url:
-        'https://commons.wikimedia.org/wiki/File:General_Sherman_en_californie_a_s%C3%A9quoia_parc.jpg#/media/File:General_Sherman_en_californie_a_s%C3%A9quoia_parc.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/7/75/General_Sherman_en_californie_a_s%C3%A9quoia_parc.jpg',
       description:
         'The largest tree on Earth by volume, standing 83.8 meters tall and estimated to be over 2,500 years old.',
     },

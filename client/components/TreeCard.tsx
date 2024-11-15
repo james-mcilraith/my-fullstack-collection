@@ -9,8 +9,8 @@ interface TreeCardProps {
 const TreeCard: React.FunctionComponent<TreeCardProps> = ({ tree }) => {
   return (
     <div className="tree-card">
-      <h3>{tree.name}</h3>
-      {/* <img src={tree.treeUrl} alt={tree.name} /> */}
+      <h2>{tree.name}</h2>
+      <img src={tree.treeUrl} alt={tree.name} />
     </div>
   )
 }
