@@ -41,7 +41,7 @@ export async function addTree(tree: TreeData) {
     age: tree.age,
     species: tree.species,
     location: tree.location,
-    tree_url: tree.location,
+    tree_url: tree.treeUrl,
     description: tree.description,
   })
   console.log(result)
@@ -56,7 +56,7 @@ export async function updateTreeById(id: number, tree: Tree) {
       age: tree.age,
       species: tree.species,
       location: tree.location,
-      tree_url: tree.location,
+      tree_url: tree.treeUrl,
       description: tree.description,
     })
     .where('id', id)

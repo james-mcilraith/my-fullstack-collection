@@ -34,7 +34,7 @@ const AddTreeForm: React.FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} autoComplete="on" className="form">
+    <form onSubmit={handleSubmit} className="form">
       <label htmlFor="name">Tree Name</label>
       <input
         id="name"
@@ -44,7 +44,6 @@ const AddTreeForm: React.FC = () => {
         onChange={(event) => setName(event.target.value)}
         placeholder="Tree Name"
         required
-        autoComplete="name"
       />
       <label htmlFor="age">Age</label>
       <input
@@ -54,7 +53,6 @@ const AddTreeForm: React.FC = () => {
         value={age}
         onChange={(event) => setAge(event.target.value)}
         placeholder="Age"
-        autoComplete="on"
       />
       <label htmlFor="species">Species</label>
       <input
@@ -64,7 +62,6 @@ const AddTreeForm: React.FC = () => {
         value={species}
         onChange={(event) => setSpecies(event.target.value)}
         placeholder="Species"
-        autoComplete="on"
       />
       <label htmlFor="location">Location</label>
       <input
@@ -74,7 +71,6 @@ const AddTreeForm: React.FC = () => {
         value={location}
         onChange={(event) => setLocation(event.target.value)}
         placeholder="Location"
-        autoComplete="on"
       />
       <label htmlFor="treeUrl">Image URL</label>
       <input
@@ -84,7 +80,6 @@ const AddTreeForm: React.FC = () => {
         value={treeUrl}
         onChange={(event) => setTreeUrl(event.target.value)}
         placeholder="Image URL"
-        autoComplete="off"
       />
       <label htmlFor="description">Description</label>
       <input
@@ -94,7 +89,6 @@ const AddTreeForm: React.FC = () => {
         value={description}
         onChange={(event) => setDescription(event.target.value)}
         placeholder="Description"
-        autoComplete="off"
       />
       <button type="submit">Add Tree</button>
     </form>
