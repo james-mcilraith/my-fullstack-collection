@@ -1,5 +1,5 @@
 # Node modules
-node_modules
+/node_modules
 
 # Logs
 *.log
@@ -8,7 +8,7 @@ node_modules
 *.sqlite3
 
 # Build products
-dist
+/dist
 
 # Jest coverage report
 coverage

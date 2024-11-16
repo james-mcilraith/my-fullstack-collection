@@ -7,7 +7,6 @@ import treesRoutes from './routes/treesroutes'
 const server = express()
 server.use(express.json())
 
-// ADD YOUR API ROUTES HERE
 server.use('/api/v1/trees', treesRoutes)
 
 if (process.env.NODE_ENV === 'production') {
